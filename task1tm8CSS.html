@@ -1,0 +1,433 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS part1 Q1 Q2</title>
+</head>
+<style>
+        #titel {
+        padding: 10px;
+        background-color:green ;
+        color: white;
+        text-align: center;
+        }
+        
+        #text  {
+        padding: top 20px; 
+        text-align: center;
+        background-color: green;
+        color: white;
+        margin: auto;
+        font-size: 30px;
+        }
+        
+        .center  {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        }
+</style>
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <section>
+            <h2>Q1. Je kunt op 3 verschillende manieren CSS in HTML inladen. Welke zijn dat en leg ze uit:</h2>
+            <articl>    
+                <p>External CSS: je kunt het uiterlijk van een hele website veranderen door slechts één bestand te wijzigen.</p>
+                <p>Elke HTML-pagina moet een verwijzing bevatten naar het externe stijlbladbestand in het &lt;link&gt; -element, in de 
+                    head-sectie. Een externe stylesheet kan in elke teksteditor worden geschreven en moet worden opgeslagen met de extensie .css.</p>
+                <p>Internal CSS: Een interne stijlpagina kan worden gebruikt als een enkele HTML-pagina een unieke stijl heeft. 
+                    De interne stijl wordt gedefinieerd in het &lt;style&gt; -element, in de head-sectie. </p>
+                <p> 
+                    Inline CSS: Een inline stijl kan worden gebruikt om een unieke stijl toe te passen op een enkel element. 
+                    Om inline stijlen te gebruiken, voegt u het style-attribuut toe aan het relevante element. 
+                    Het style-attribuut kan elke CSS-eigenschap bevatten.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Q2. CSS pas je toe met een bepaalde syntax. Hoe ziet het eruit en kan je het uitleggen per element?</h2>
+            <article>
+            <pre>
+            <h2 id="titel">CSS Syntax</h2>
+            <p id="text"> Een CSS Rule-Set bestaat uit een selector en een declaratieblok:</p>
+            <img class="center" src="https://www.w3schools.com/css/selector.gif">       
+            <p id="text">
+            De selector wijst naar het HTML-element dat u wilt opmaken.
+            Het declaratieblok bevat een of meer declaraties gescheiden door puntkomma's.
+            Elke declaratie bevat een CSS-eigenschapsnaam en een waarde, 
+            gescheiden door een dubbele punt.Meerdere CSS-declaraties worden gescheiden door puntkomma's,
+            En declaratieblokken zijn omgeven door accolades.</p>
+            </pre>
+            </article> 
+        </section>
+    
+
+        
+
+        <h4>Q3. Er zijn verschillende selectors, voorbeeld:</h4>
+        <ul>
+            <li>Type selectors</li>
+            <li>Descendant selectors</li>
+            <li>Class selectors</li>
+        </ul>
+
+    <h4>Maak van de bovengenoemde selectors voorbeelden. Geef in je   antwoord ook aan wat de voordelen zijn van elke selector.</h4>
+    <p>De type selector selecteert/target elementen in een HTML document die ik wil aanpassen/stylen. Bijv ik wil alle 'a' tags of 'p' tags van mijn HTML layout in het rood dan kan ik dit in CSS aangeven.
+    Voordeel hieraan is dat je specifiek target.</p><br>
+
+    <p>Voorbeeld type selector:</p>
+    <span>Here's a span with some text.</span>
+    <p>Here's a p with some text.</p>
+    <span>Here's a span with more text.</span>
+
+        <style>
+            span {
+            background-color: skyblue;
+            }
+        </style>
+
+    <p>De CSS Descendant selector matched alle elementen die nakomelingen zijn van een specifieke element. De descendant selector is een onderdeel van de CSS combinators:'A combinator is something that explains the relationship between the selectors'. Selectors die een onderdeel zijn van combinators: descendant selector (space), child selector (>), 
+    adjacent sibling selector (+) en general sibling selector (~). 
+    Voordeel hiervan is dat je selectors kan combineren om samen een element te targeten.</p><br>
+   <p>Voorbeeld descendant selector:</p>
+
+        <div>
+            <p>Hello, <b>world</b> - what a <b>beautiful</b> day!</p>
+        </div>
+
+        <style type="text/css">
+            p b {
+                color: Blue;
+            }
+        </style>
+
+    <p> De Class selector selecteert HTML elementen met een specifieke class attribuut. Bijv. je kan een div een class naam geven met een specifieke naam of verwijzing van je Div. Hiermee kan je in je CSS file specifiek je class vorm geven. In je CSS begin je een class naam altijd met een punt. Voordeel hiervan is dat je classes kan hergebruiken op verschillende plaatsen en zelfs verschillende pagina's. 
+    Het wordt dan eenvoudig op CSS stijlregels toe te passen op deze klassen en ze een mooie opmaak te geven.</p><br>
+
+    <p>Voorbeeld class selector:</p><br>
+
+        <div class="main-content">
+            <p>Dit is mijn main content.</p>
+        </div>
+
+        <style> 
+            .main-content {
+            text-align: center;
+            color: red;
+            }
+        </style>
+
+        
+        <section>
+            <h2>Q4. Maak een aparte HTML bestand. Voeg de genoemde code toe en style het net als het voorbeeld.</h2>
+            <div class="q4">
+                <h2 class="q4title">Title</h2>
+                <p class="q4paragraph">Paragraph text</p>
+                Tekst zonder tag
+            </div>
+        </section>
+        <section>
+            <h2>Q5. Maak een aparte HTML bestand. Voeg de genoemde code toe en style het net als het voorbeeld.</h2>
+            <p>Je kan met ID of Class een specfieke tag targetten in je CSS. Met ID gebruik je de # tag
+                in je CSS. Met Class gebruik je . (punt) in je CSS.
+            </p>
+            <div class="q5">
+                <h2 class="q5heading">Class selectors</h2>
+                <p class="q5p1">Paragraph text 1</p>
+                <p class="q5p2">Paragraph text 2</p>
+            </div>
+        </section>
+        
+
+
+
+        <title>CSS part 1 Q6</title>
+    </head>
+        <style>
+            p:first-child{ color: red; } 
+        
+            div + p {background-color: yellow;}
+        
+            #general{ color: green;
+                background-color: black;}
+                
+            ul { list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333; }
+        
+            li {float: left; }
+        
+            li a { display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;}
+        
+            li a:hover { background-color: #111;}
+        </style>
+    <body>
+        <nav>
+    
+        </nav>
+        <main>
+            <h2>Q6. Maak een apart HTML bestand. Voeg 3x selectors (child, adjacent, general), toe met de voordelen.</h2>
+            <ul>
+                <li><a href="./">Opdracht 4</a></li>
+                <li><a href="./">Opdracht 5</a></li>
+                <li><a href="./">Opdracht 7</a></li>
+                <li><a href="./">Opdracht 8</a></li>
+            </ul>
+                <h1>Opdracht 6</h1>
+              
+                <h3>Adjacent Selectors & Child selector</h3>
+                <p>
+                  De adjacent sibling selector (+) selecteert alle elementen die de adjacent sibling zijn van een gespecificeerd element.
+                </p>
+             
+                <div>
+                  <p>Paragraph 1 in the div.(1st child)</p>
+                  <p>Paragraph 2 in the div.</p>
+                </div>
+                
+                <p>Paragraph 3. Not in a div.</p>
+                <p>Paragraph 4. Not in a div.</p>
+              
+              <div>
+                <h3>General Selector</h3>
+                <p id="general">ID selector </p>
+              </div>       
+        </main>
+
+    
+
+
+        <title>CSS part 1 Q7 adjacent selector</title>
+    <style>
+           div + p {
+  background-color: yellow;
+}
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+<!-- Adjacent selector (( div + p ))  =  + selecteer alle elementen die adjacent-kinderen zijn van het specifiek element-->
+<!-- kinder-element moet dezelfde ouder-element hebben, ''adjacent'' gelijk volgend na-->
+        <div>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+                    <p>tekst hier</p>
+        <div>
+            <span>Here's a span with some text.</span>
+            <p >Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+                    <p>tekst hier</p>
+            <h1>Hallo </h1>
+                    <p>tekst hier</p>
+    </main>
+    
+    
+
+
+    
+
+    <title>CSS part 1 Q7 Class selector</title>
+    <style>
+           .paragraaf { background-color: yellow;}
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+<!-- class selector =  selecteer hetgeen met de class name//'paragraaf'-->
+        <div>
+            <span>Here's a span with some text.</span>
+            <p class="paragraaf">Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+        <div>
+            <span>Here's a span with some text.</span>
+            <p class="paragraaf">Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+    </main>
+
+    <title>CSS part 1 Q7 Descendant selector</title>
+    <style>
+           div p {background-color: yellow;}
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+<!-- descendant selector space/open stuk = selecteerd all de 'p' in de div als gemarkeerd geel. -->
+        <div>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+    </main>
+    
+
+
+    <title>CSS part 1 Q7 general selector</title>
+    <style>
+         div ~ p {background-color: yellow;}   
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <!-- general selector <div ~ p > = selecteerd all 'p' die 'kinderen' zijn van een specifiek element. -->
+        <div>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+            <span>Here's a span with some text.</span>
+            <p>Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+    </main>
+   
+
+
+    <main>
+        <!-- type selector = selecteert elk element met hetzelfde type // 'type_selector' class-->
+        <div class="type_selector">
+            <span>Here's a span with some text.</span>
+            <p class="type_selector_p">Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+        <div class="type_selector">
+            <span>Here's a span with some text.</span>
+            <p class="type_selector_p">Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+        <div class="type_selector">
+            <span>Here's a span with some text.</span>
+            <p class="type_selector_p">Here's a p with some text.</p>
+            <span>Here's a span with more text.</span>
+        </div>
+    </main>
+    
+    
+    <title>CSS weken part 1 - Q7 all</title>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <h2>Q7. Maak een HTML bestand met voorbeelden van alle soorten selectors erin.</h2>
+        <section>
+            <article>
+                <a href="./CSS weken part 1 - Q7 Type selector.html " target="_blank">Type selectors</a>
+            </article>
+        <br>
+            <article>
+                <a href="./CSS weken part 1 - Q7 Descendant selector.html " target="_blank">Descendant selectors</a>
+            </article>
+        <br>
+            <article>
+                <a href="./CSS weken part 1 - Q7 Class selector.html " target="_blank">Class selectors </a>
+            </article>
+        <br>
+            <article>
+                <a href="./CSS weken part 1 - Q7 Child selector.html " target="_blank">Child selectors </a>
+            </article>
+        <br>
+            <article>
+                <a href="./CSS weken part 1 - Q7 Adjacent selector.html " target="_blank">Adjacent selectors</a>
+            </article>
+        <br>
+            <article>
+                <a href="./CSS weken part 1 - Q7 General selector.html " target="_blank">General selectors</a>
+            <article>
+        </section>
+    </main>
+    
+    <main>
+        <h2>Q8. Leg in eigen worden uit wat Cascade en Inhertance betekent met voorbeelden.</h2>
+        <article>
+            <p>
+                Stylesheets cascade - op een heel eenvoudig niveau betekent dit dat de volgorde van CSS-regels ertoe doet; 
+                wanneer twee regels van toepassing zijn die dezelfde specificiteit hebben, 
+                wordt degene die als laatste in de CSS komt, degene die zal worden gebruikt.
+                In het onderstaande voorbeeld hebben we twee regels die van toepassing kunnen zijn op de h1. 
+                De h1 wordt uiteindelijk blauw gekleurd - 
+                deze regels hebben een identieke selector en hebben daarom dezelfde specificiteit, 
+                dus de laatste in de bronvolgorde wint.
+
+            </p>
+        </article>
+
+        </article>    
+            <h1>Dit is mijn heading.</h1>
+        <style>
+            h1 { color: red;  }
+            h1 {  color: blue;  }      
+        </style>
+     
+        <article>
+            <p>Specificity is hoe de browser beslist welke regel van toepassing is als meerdere regels verschillende selectors hebben,
+                maar kan nog steeds van toepassing zijn op hetzelfde element. 
+                <br>
+                Het is in feite een maatstaf voor hoe specifiek de selectie van een selector zal zijn:
+                Een elementenselector is minder specifiek het selecteert alle elementen van dat type die op een pagina verschijnen 
+                En krijgt dus een lagere score. 
+                <br>
+                Een klassenkiezer is specifieker - hij selecteert alleen de elementen op een pagina die een specifieke klasse-attribuutwaarde hebben 
+                En krijgt dus een hogere score. 
+                <br>
+                Voorbeeld tijd! Hieronder hebben we weer twee regels die van toepassing kunnen zijn op de h1.
+                De onderstaande h1 wordt uiteindelijk rood gekleurd - de klasseselector geeft zijn regel een hogere specificiteit, 
+                en dus zal deze worden toegepast ook al verschijnt de regel met de elementenselector verder naar beneden in de bronvolgorde.
+            </p>
+        </article>
+
+        <article>
+            <p class="h4">
+                Inheritance moet ook in deze context worden begrepen sommige CSS-Property en
+                die op bovenliggende elementen zijn ingesteld, worden geërfd door hun onderliggende elementen en andere niet. 
+                <br>
+                Als u bijvoorbeeld een kleur en lettertypefamilie instelt op een element, 
+                wordt elk element erin ook gestileerd met die kleur en lettertype, 
+                <br>
+                Tenzij u er rechtstreeks andere kleur- en lettertypewaarden op hebt toegepast.
+                <br>
+                Omdat het lichaam een ​​blauwe kleur heeft gekregen, wordt dit via de nakomelingen overgeërfd. 
+                <br>
+                We kunnen de kleur veranderen door het element te targeten met een selector, zoals deze <span>span</span>.</h4>            
+            </p>
+        </article>
+
+        <style>
+            .h4 { color: blue;   }
+            span {  color: black;   } 
+        </style>
+    </main>
+    
+    
