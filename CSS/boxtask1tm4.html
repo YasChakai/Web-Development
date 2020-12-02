@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Box model</title>
+</head>
+<body>
+ <selection>
+ <pre>    
+ <h1>Wat zijn de eigenschappen van block boxes </h1>
+ <h4> 
+     
+
+ In een Block formatting context, worden boxes de een na de ander opgemaakt, 
+ wee broers of zussen wordt bepaald door de 'marge'-eigenschappen. 
+ Verticale marges tussen aangrenzende vakken op blokniveau in een blokopmaakcontext worden samengevouwen.    
+ verticaal,beginnend bovenaan een bevattend blok. De verticale afstand tussen 
+ In een blokopmaakcontext raakt de linkerbuitenrand van elk vak de linkerrand van het bevattende blok 
+ (voor opmaak van rechts naar links raakt de rechterrand aan)
+
+ </h4>
+
+
+ <h1>Wat zijn de eigenschappen van inline boxes</h1>
+ <h4>
+
+ In een inline-opmaakcontext worden vakken horizontaal achter elkaar opgemaakt, 
+ beginnend aan de bovenkant van een bevattend blok. Horizontale marges, 
+ randen en opvulling worden gerespecteerd tussen deze vakken. 
+ De vakken kunnen op verschillende manieren verticaal worden uitgelijnd: de onderkant 
+ of bovenkant kan worden uitgelijnd, 
+ of de basislijnen van de tekst erin kunnen worden uitgelijnd. 
+ Het rechthoekige gebied dat de kaders bevat die een lijn vormen, 
+ wordt een lijnvak genoemd.
+
+ </h4>
+
+
+ <img src="https://media.prod.mdn.mozit.cloud/attachments/2018/08/04/16125/431d08e3aeed6443efbfb1e3bfa0e8e4/mdn-horizontal.png">
+ <img src="https://media.prod.mdn.mozit.cloud/attachments/2018/08/04/16126/bdd2c3c9f97908b76aca37811950278d/mdn-vertical.png">
+
+</pre>
+
+
+</selection>
+
+<p>
+
+Dit is een block box en neem de hele breedte in waardoor de volgende box op de volgende regel zit
+In dit blok zit <span>inline tekst</span> in wat dus niet op de volgende regel komt te <span>staan</span>
+</p>
+
+<style>
+
+p {
+
+background-color: green; width: 1130px;
+border-style: solid;
+
+
+
+}
+
+span {
+
+background-color: white;
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+<pre>
+
+<h1> Wat zijn de termen content,padding,margin en border.</h1>
+
+<h4> 
+ De margin is de afstand van de rand van een element tot de rand van het parent element 
+ of de rand van een aangrenzend element. De margin is transparent en neemt dus de achtergrondkleur aan van het parent element.
+ De border is de rand van een element.
+
+ De padding is de afstand tussen de rand van een element en de inhoud. 
+ Indien een achtergrondkleur gebruikt wordt voor het element, 
+ dan heeft de padding dezelfde kleur.
+
+ De grootte van de box wordt bepaald door de som van de afmetingen van het element en de breedte van de margin, 
+ de border en de padding.
+ De breedte van de margin, de border en de padding worden vastgelegd met de eigenschappen voor de margin, de rand en de padding. De afmetingen van de inhoud van het element kunnen worden vastgelegd met de eigenschappen width en height.    
+</h4>
+<img src="https://www.handleidinghtml.nl/css/css-elementen/schermafdrukken/box01.gif">
+</pre>
+
+
+
+</body>
+</html>
