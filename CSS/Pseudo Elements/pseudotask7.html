@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.piece {
+  width: 10em; height: 8.66em;
+  background: rgba(0, 0, 0, 0.979);
+  transition: .5s;
+  cursor: pointer;
+}
+.piece {
+  margin-top: 200px;
+  margin-left:600px;
+  position: absolute;
+  transform: rotate(-30deg) skewX(30deg);
+}
+.piece:before, .piece:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  background: inherit;
+  content: '';
+}
+.piece:before {
+  transform: skewX(-30deg) skewX(-30deg);
+}
+.piece:after {
+  transform: skewX(-30deg) rotate(-60deg) skewX(-30deg);
+}
+.piece:hover { background: rgba(20, 158, 66, 0.5); }
+
+
+.piece2 {
+  width: 10em; height: 8.66em;
+  background: rgba(0, 0, 0, 0.979);
+  transition: .5s;
+  
+ 
+}
+.piece2 {
+ margin-top: 200px; 
+  margin-left:600px;
+  position: absolute;
+  transform: rotate(-60deg) skewX(30deg);
+}
+.piece2::before, .piece2::after {
+  position: absolute;
+  width: inherit; height: inherit;
+  background: inherit;
+  content: '';
+}
+.piece2:before {
+  transform: skewX(-30deg) skewX(-30deg);
+}
+.piece2:after {
+  transform: skewX(-30deg) rotate(-60deg) skewX(-30deg);
+}
+.piece2:hover { background: rgba(25, 75, 20, 0.5); }
+
+</style>
+
+
+
+</head>
+<body>
+<div class='piece'></div>   <div class='piece2'></div>   
+</body>
+</html>
