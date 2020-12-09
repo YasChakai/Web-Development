@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+           <style>
+       
+
+
+            .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 150px;
+          
+            }
+
+            body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+            }
+  
+
+            .kaart {
+            background-color: rgb(255, 255, 255);
+            width: 320px;
+            height: 560px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -30px;
+            box-shadow: rgb(250, 247, 59) 0px 0px 10px 10px;
+            transition: all 0.5s, color 0s ease;
+            text-align: center;
+            }
+            
+            #pokemoncard{
+            height: 560px;
+            width:320px ;
+
+            }
+
+
+            .kaart:hover {
+            transform: translateY(-50px);
+            transition: 0;
+            }
+
+            .kaart:hover~.kaart {
+            color: red;
+            transform: translateX(80px);
+            }
+
+            </style>
+
+
+
+
+
+</head>
+<body>
+<div class="container">
+    <div class="kaart">
+       <img id="pokemoncard" src="https://i.pinimg.com/originals/a6/3c/cf/a63ccfc963b6c64f57f3bd5047d8aaa3.gif">
+        
+       
+        
+        </div>
+         <div class="kaart">
+          <img id="pokemoncard" src="https://media1.giphy.com/media/nBHnyQePKnES4/giphy.gif" >
+         
+         
+        </div>
+            <div class="kaart">
+            <img id="pokemoncard" src="https://media2.giphy.com/media/Z58OU83atqbOU/giphy.gif?cid=ecf05e4722d128df14fc7cc5663bc3bb4817497b522b3591&rid=giphy.gif">
+           
+            
+        </div>
+        <div class="kaart">
+            <img id="pokemoncard" src="https://media4.giphy.com/media/3MumjLMHhkYiA/giphy.gif?cid=ecf05e47nkp4aeb51rrw0mavwr40rw2m45lwnn7wjd8fipk3&rid=giphy.gif" >
+           
+            
+        </div>
+
+    </div>  
+</body>
+</html>

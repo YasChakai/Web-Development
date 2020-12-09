@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+   
+    
+    h1:hover {
+        width: 260px;
+        background-color: rgb(204, 53, 53);
+    }
+    </style>
+</head>
+<body>
+    <p>Het is met CSS al tijden mogelijk om veranderingen te laten plaatsvinden bij bijvoorbeeld mouse-hover. Maar sinds CSS3 is het ook mogelijk om alle veranderingen in soepele ‘transities’ te laten plaatsvinden. In deze blog worden een paar voorbeelden gegeven van mogelijke CSS3-transities.
+
+        “Transition” toepassen in CSS3
+        Wanneer een transitie gebruikt moet worden in CSS, kan de volgende regel toegevoegd worden:
+        
+        .element {
+            transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+        }
+        
+        transition-property: Hier komt het attribuut dat geanimeerd moet worden. Denk hierbij aan top, color, font-size, etc.
+        
+        transition-duration: hier wordt de duur van de transitie aangegeven in seconden of milliseconden.
+        
+        transition-timing-function: aan deze parameter kan meegegeven worden wat de snelheid van de transitie moet zijn. Bijvoorbeeld linear, ease-in-out, etc. Op de volgende site staan alle mogelijkheden: http://www.w3schools.com/css/css3_transitions.asp. Deze parameter is niet verplicht.
+        
+        transition-delay: hiermee kan een vertraging meegegeven worden aan de transitie. Ook deze parameter is niet verplicht</p>
+    <p>Voordat er voorbeelden genoemd worden, is het belangrijk om te weten dat “transition” niet (direct) voor alle browsers werkt. Om ervoor te zorgen dat de meeste browsers gebruik kunnen maken, moet er voor de transition een “prefix” geplaatst worden. Zie hieronder een voorbeeld hiervan:</p>
+
+
+
+    <p>-webkit-transition: background-color 500ms ease-out 1s; /* Chrome, Safari, nieuwe versies van Opera. */
+        -moz-transition: background-color 500ms ease-out 1s; /* Firefox */
+        -o-transition: background-color 500ms ease-out 1s; /* Oudere versies van Opera */
+        transition: background-color 500ms ease-out 1s;</p>
+
+
+     <h1> Kleur verandering </h1>
+
+
+    </body>
+</html>
