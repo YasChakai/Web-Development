@@ -1,0 +1,180 @@
+body {
+    font-family: 'Lobster', cursive;
+    background-color: rgb(136, 119, 119);
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 2em;
+}
+
+section {
+    position: relative;
+}
+
+section::before {
+    position: absolute;
+    content: "";
+    background-image: url(./cooking.jpg);
+    filter: brightness(50%);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    margin-top: -40px;
+    top: 0px;
+    left: 0px;
+}
+
+.cooking {
+    margin-left: 50%;
+    color: rgb(97, 135, 216);
+    position: relative;
+}
+
+#buy {
+    color: rgb(97, 135, 216);
+}
+
+#show {
+    color: rgb(128, 179, 128);
+}
+
+button {
+    padding: 5px 15px 5px 15px;
+    background: none;
+    border-color: rgb(128, 179, 128);
+}
+
+#cookingtitle {
+    font-size: 52px;
+    margin-bottom: 0px;
+}
+
+#populair {
+    font-size: 52px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.imgpasta {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gerechten {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pasta {
+    height: 400px;
+    width: 300px;
+}
+
+span {
+    margin-left: 230px;
+}
+
+.show {
+    margin-left: 250px;
+}
+
+
+.chef1 {
+    width: 350px;
+    height: 600px;
+    border-radius: none;
+}
+
+.menucontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+#menutitle {
+    text-align: center;
+}
+
+.outercontainer {
+    display: flex;
+    flex-direction: wrap;
+
+}
+
+.container1 {
+    width: 300px;
+}
+
+.container2 {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.container3 {
+    width: 300px;
+    margin-left: 20px;
+}
+
+
+.footer {
+    position: relative;
+    height: 200px;
+    padding-top: 30px;
+    width: 100%;
+    background-color: rgb(122, 175, 144);
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.contact {
+    display: inline-block;
+    justify-content: space-around;
+
+
+
+
+}
+
+.info {
+    display: inline-block;
+    justify-content: space-around;
+    margin-left: 600px;
+
+}
+
+
+#tekst {
+    color: rgb(97, 135, 216);
+    font-size: 20px;
+
+
+}
+
+
+#in {
+
+    color: rgb(97, 135, 216);
+
+
+
+}
