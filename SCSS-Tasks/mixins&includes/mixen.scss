@@ -1,0 +1,33 @@
+}@mixin mix {
+    background-color: green;
+    color: yellow;
+    border: 3px solid black;
+
+    &:hover {
+
+        background-color: red;
+    }
+}
+
+@mixin square {
+    margin: 200px;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    transition: background-color 2s ease-in;
+
+    &:hover {
+
+        background-color: yellow;
+    }
+}
+
+.button {
+    @include mix();
+}
+
+.color {
+
+    @include square();
+}

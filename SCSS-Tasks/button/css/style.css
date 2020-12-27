@@ -1,0 +1,11 @@
+.button {
+  width: 50px;
+
+  border: 1px solid;
+  background-color: #091a7c;
+}
+
+.button:hover {
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
