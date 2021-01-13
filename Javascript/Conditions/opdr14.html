@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translateMonth"></div>
+
+    <script>
+        function translateMonth() {
+        let number = document.getElementById('number').value;
+        let output;
+
+        // let num = 5;
+        // let num2= '5';
+        // let num3 = 3;
+
+        // if (num === 1) {
+        //     voer dit uit
+        // } else if (num === num3) {
+        //     voer dit uit
+        // }
+
+        // switch (num) {
+        //     case 1:
+        //         console.log ('jaaa')
+        //         break;
+        //     case num3:
+        //         console.log ('Ik ben gelijk aan num3')
+        //         break;
+        // }
+        // number=typeof(number)
+        
+        console.log (number);
+        switch (parseInt(number)) {
+                case 1:
+                    output = "January";
+                    break;
+                case 2:
+                    output = "February";
+                    break;
+                case 3:
+                    output = "Maart";
+                    break;
+                case 4:
+                    output = "April";
+                    break;
+                case 5:
+                    output = "Mei";
+                    break;
+                case 6:
+                    output = "Juni";
+                    break;
+                case 7:
+                    output = "Juli";
+                    break;
+                case 8:
+                    output = "Augustus";
+                    break;
+                case 9:
+                    output = "September";
+                    break;
+                case 10:
+                    output = "Oktober";
+                    break;
+                case 11:
+                    output = "November";
+                    break;
+                case 12:
+                    output = "December";
+                    break;
+            }
+            console.log(output);
+            document.getElementById('translateMonth').innerHTML = "Deze maand is het" + output;
+            
+        }
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

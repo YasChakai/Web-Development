@@ -18,53 +18,53 @@
     </div>
 
     <script>
-        
-    function checkNumber(){
-       let number = document.getElementById("number").value;
-       
-       if (number == 3) {
-        
-       document.getElementById("label").innerHTML = "Het ingevoerdegetal is gelijk aan 3";
 
-       }
+        function checkNumber() {
+            let number = document.getElementById("number").value;
 
-       if (number > 4) {
-        
-        document.getElementById("label").innerHTML = "Het ingevoerdegetal is groter aan 4";
- 
-        }
-       
-        if (number >= 11) {
-        
-        document.getElementById("label").innerHTML = "Het ingevoerdegetal is gelijk aan en groter dan 11";
- 
-        }
+            if (number == 3) {
 
-        if (number < 3) {
-        
-        document.getElementById("label").innerHTML = "Het ingevoerdegetal is kleiner dan 3 ";
- 
-        }
-        if (number == 3) {
-        
-        document.getElementById("label").innerHTML = "Het ingevoerdegetal is gelijk aan 3";
- 
-        }
- 
-        if (number == 4) {
-         
-         document.getElementById("label").innerHTML = "";
-  
-         }
-    
-     
- 
- 
+                document.getElementById("label").innerHTML = "Het ingevoerdegetal is gelijk aan 3";
 
-    }
+            }
+
+
+            if (number < 3) {
+
+                document.getElementById("label").innerHTML = "Het ingevoerdegetal is kleiner dan 3 ";
+
+            }
+            if (number == 3) {
+
+                document.getElementById("label").innerHTML = "Het ingevoerdegetal is gelijk aan 3";
+
+                if (number > 4) {
+
+                    document.getElementById("label").innerHTML = "Het ingevoerdegetal is groter aan 4";
+
+                }
+            }
+
+            if (number == 4) {
+
+                document.getElementById("label").innerHTML = "";
+
+            }
+
+            if (number >= 11) {
+
+                document.getElementById("label").innerHTML = "Het ingevoerdegetal is gelijk aan en groter dan 11";
+
+            }
+
+
+
+
+
+        }
     </script>
 
-    
+
 
 </body>
 

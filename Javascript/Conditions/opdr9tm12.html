@@ -21,20 +21,35 @@
     <script>
     function checkNumber(){
        let number = document.getElementById("number").value;
-
-       if (number >13  ) {
-        
-        document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20";
-         }
-
+       
 
  
-       if (number >5 <=10) {
+       if (number >5 && number <10) {
         
        document.getElementById("label").innerHTML = "Het ingevoerdegetal is tussen de 5 en 10";
         }
         
+        
  
+       if (number >13 && number <20 ) {
+        
+        document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20";
+         }
+
+         if (number ==21 || number ==23  ) {
+        
+        document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23";
+         }
+   
+
+         if (number >30 && number <35 || number >40 && number <45 )  {
+
+        document.getElementById("label").innerHTML = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45";
+
+
+         }
+               
+
 
      checkNumber();
     }
