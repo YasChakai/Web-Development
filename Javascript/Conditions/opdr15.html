@@ -60,31 +60,31 @@
     <section>
         <div class="words">
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Together</span>
-            </button>
-            <button  onclick="guess(this)">
-                <div class="fg">Show</div><span >Teamwork</span>
+                <div class="fg">Show</div><span>Together</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Scrum</span>
+                <div class="fg">Show</div><span>Teamwork</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span ></span>Individual</span>
+                <div class="fg">Show</div><span>Scrum</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Moments</span>
+                <div class="fg">Show</div><span>Individual</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Like</span>
+                <div class="fg">Show</div><span>Moments</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Dislike</span>
+                <div class="fg">Show</div><span>Like</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Money</span>
+                <div class="fg">Show</div><span>Dislike</span>
             </button>
             <button onclick="guess(this)">
-                <div class="fg">Show</div><span >Important</span>
+                <div class="fg">Show</div><span>Money</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Important</span>
             </button>
         </div>
     </section>
@@ -95,32 +95,49 @@
     <script>
         const words = ["Together", "Teamwork", "Scrum", "Individual", "Moments", "Like", "Dislike",
             "Money", "Important"];
-        const guessingWord = words[Math.round(Math.random() * 8)];
-        // Winnaars bericht
-        const winString = "You have guessed the correct word = ";
+        const guessingWord = words[Math.round(Math.random() * 8)]
+        const gewonnen = "You have guessed the RIGHT word = ";
         const levens = 3;
-        let count = document.getElementById('count').innerHTML;
-        // wat is de magische woord
+        let count = document.getElementById("count").innerHTML;
         console.log(guessingWord);
-        
         function guess(obj) {
-            // hoe de value op te pakken
-            let word = obj.querySelector("span").innerHTML;
-            // vergelijk guessingword met gekozen.
+            console.log(obj);
+            let woordje = obj.querySelector("span").innerHTML;
+            console.log(woordje);
+
+            if (woordje == guessingWord) {
+
+                alert(gewonnen + guessingWord);
+
+
+              location.reload();
+            }
+
+            else {
+
+                count++
+                document.getElementById("count").innerHTML=count;
+                console.log(count);
             
-            if (word == guessingWord) {
-                // handleling correct awnser
-                alert(winString + guessingWord);       
-            } else {
-                count++;
-                document.getElementById('count').innerHTML = count;
                 if (count == levens) {
-                    alert('GAME OVER!!!!!!');
-                    location.reload();
+                
+                alert ("gameover")
+                
+                location.reload();
+
+
+
                 }
-            }            
+            }
+
+
+
         }
-        
+
+
+
+
+
     </script>
 </body>
 
