@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <p id="answer"></p>
+    <input type="text" name="text" id="inputText">
+    <button onclick="name()">click</button>
+
+
+
+
+    <script>
+
+        const checkName = (name) => {
+            function name() {
+                const nameCheck = document.getElementById("inputText").value;
+                const name = ["John", "Olly", "Mo", "Hendrik", "Tony"];
+                console.log(nameCheck);
+                if (name.includes(nameCheck) == true) {
+                    console.log(`Jouw naam is: ${nameCheck}. Dit is een  bekende in ons systeem`);
+                }
+                else {
+                    console.log("Onbekend in ons systeem");
+                }
+            }
+
+        }
+
+        // Nog afmaken
+    </script>
+</body>
+
+</html>

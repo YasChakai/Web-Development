@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // Maak een array met 10 getallen die willekeurig in een array staan. 
+        // Print de array uit in jouw console
+        let randomNumbers = [];
+        randomNumbers = [1, 4, 5, 8, 9, 13, 15, 25, 60, 10];
+        console.log(randomNumbers[4]);
+
+        // Maak een array met 5 verschillende fruitsoorten.
+        //  Print de array uit in jouw console
+        let fruit = [];
+        fruit = ["Appel", "Peer", "Aardbei", "Mango", "Kiwi"];
+
+        console.log(fruit);
+
+
+
+        // Op welke index staat “Appel”.
+        //  Gebruik de index waarde om “Appel” in jouw console uit te printen.
+        console.log(fruit[0]);
+
+
+
+        // Op welke index staat “Aardbei”. 
+        // Gebruik de index waarde om “Aardbei” in jouw console uit te printen.
+        console.log(fruit[2]);
+
+        // We gaan het iets complexer maken met het bepalen van de fruit. 
+        // Er zijn nu 2 arrays gedefinieerd, namelijk een array met getallen en een
+        // ray
+        // met fruitsoorten. De eerste array bepaalt welke fruitsoort er geprint
+        // moet worden.
+        // Gebruik de Math.random() methode om te bepalen welke waarde uit de eerste array 
+        // wordt gehaald. Vervolgens kun je de waarde gebruiken als index
+        // en de fruitsoort 
+        // printen in jouw console. Helaas, de getallen 5 t/m 10 uit de eerste array 
+        // zullen een undefined teruggeven als je dat als index bij de fruit array
+        // zal 
+        // gebruiken. Hiervoor kun je de modulo (%) gebruiken. Zoek uit hoe modulo
+        // werkt en
+        // pas dat toe aan de waarde van de eerste array. 
+        // Als resultaat zal er altijd een fruitsoort uitgeprint worden. 
+        let math = Math.floor(Math.random() * randomNumbers.length);
+        console.log(math);
+        console.log(fruit[math % 5]);
+
+
+        // Je hebt nu geleerd hoe je arrays kunt aanmaken en de waarde kunt benaderen.
+        //  Arrays hebben ook functies die je kunt gebruiken.
+        //   Zoek uit wat push(), pop(), shift(), slice(), splice(), sort(). 
+        //   Maak gebruik van de fruits array en maak voor elke functie 
+        //   een voorbeeld en geef in commentaar wat het doet. 
+
+        //.push De push() methode voegt een of meerdere elementen 
+        //  toe aan het einde van een array en geeft de nieuwe 
+        //  lengte van de array terug..
+        fruit.push("andere fruitsoorten", "banaan");
+        console.log(fruit);
+
+        //.pop verwijderd de laatste value van een array .
+        fruit.pop();
+        console.log(fruit);
+
+
+        //.shift verwijderd de eerste value van een array.
+        fruit.shift();
+
+        //.slice creëert een kopie van de array, meestal assigned aan een nieuwe variable.
+        var newFruit = fruit.slice()
+        console.log("new fruit", newFruit);
+
+        //.splice vind de specifieke positie en verwijder vanaf een nummer in de array.
+        fruit.splice(2, 2);
+        console.log(fruit);
+
+
+        // Naast de functies die je van de array kunt gebruiken heb je ook nog de “length”
+        //  property die je kunt gebruiken. Hiermee kan je de grootte van de array opvragen
+        // Gebruik de length property en print in de console uit hoe groot de fruits
+        //  array is. 
+        console.log("lengte fruits array; " + fruit.length);
+
+
+
+        // De bestaande values van de array kan je ook aanpassen. 
+        // Zoek uit hoe je op een specifieke index de waarde kan aanpassen. 
+        // Pas de value “Peer” naar “Sinaasappel”. 
+        fruit.splice(0, 1, "test")
+        console.log(fruit);
+
+
+        //  Kijkend naar de fruits array. Hoe draai je de values “Aardbei”
+        //   en “Mandarijn” om in de array door gebruik te maken van indices (index).
+        fruit = ["Appel", "Peer", "Aardbei", "Mango", "Mandarijn"];
+        console.log(fruit);
+        fruit.splice(2, 1, "Manderijn");
+        console.log(fruit);
+        fruit.splice(4, 1, "Aardbei");
+        console.log(fruit);
+    </script>
+</body>
+
+</html>

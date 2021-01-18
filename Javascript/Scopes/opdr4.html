@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function printCar() {
+            carBrand = "Volvo";
+            return function (type) {
+                console.log(carBrand + " " + type);
+            }
+        }
+        const car = printCar();
+        car("v40");
+    </script>
+    <pre>Opdracht 4:
+        Kijkend naar de volgende code:
+        function printCar() {
+        carBrand = "Volvo";
+        return function(type) {
+        console.log(carBrand + " " + type);
+        }
+        }
+        const car = printCar();
+        car("v40");
+        Wat wordt er in de console gelogt? Hoe is dit anders voorgaande opdrachten? Lees
+        je meer over closures:
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</pre>
+
+
+    <pre>Volvo v40 is de uitkomst in de log. Closure is een function in een function die
+        afhankelijk is van de variables in de eerste function. Dit is anders als vorige
+        opdrachten omdat je nu de value uit de functie haalt die gereturned is. </pre>
+</body>
+
+</html>
