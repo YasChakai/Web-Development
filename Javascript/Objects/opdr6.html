@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            persons() {
+                console.log('persons:', this.name)
+                console.log('age:', this.age)
+                
+
+            }  
+        }
+
+        const infoJan =  new Person("Jan", 24);
+        const infoKlaas = new Person("Klaas", 15);
+         
+            infoJan.persons();
+            infoKlaas.persons();
+        
+
+    </script>
+</body>
+</html>

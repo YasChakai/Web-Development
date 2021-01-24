@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Opdracht 7 Loops & Iterators</title>
+    </head>
+    <body>
+
+        <div id="answer"></div>
+        <script>
+
+           let numbers = [1,2,3,4,5,6,7,8,9,10];
+            let a = 1;
+           while (a < 4) {
+              
+            if(a == 1) {
+                for (i = 0; i < numbers.length; i++) {
+                    console.log(numbers[i] * 1)
+                }
+            } else if (a == 2) {
+                for (i = 0; i < numbers.length; i++) {
+                    console.log(numbers[i] * 2);
+                }
+            } else if (a == 3) {
+                for (i = 0; i < numbers.length; i++) {
+                    console.log(numbers[i] * 3);
+                }
+            }
+            a++
+        }
+        </script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+     const clubInfo = function (nameClub, typeSport, numberMembers, memberNation) {
+         
+         
+         this.nameClub = nameClub;
+         this.typeSport = typeSport;
+         this.numberMembers = numberMembers;
+         this.memberNation = memberNation;
+
+         
+     }
+        
+        let allClubs = [
+            clubAjax = new clubInfo("Ajax", "voetbalclub", "11", "Nederland"),
+            clubFeyenoord = new clubInfo("Feyenoord", "voetbalclub", "11", "Nederland"),
+            clubPSV = new clubInfo("PSV", "voetbalclub", "11", "Nederland")
+        ];   
+            for (var i = 0; i < allClubs.length; i++) {
+             console.log(allClubs[i].nameClub);
+        }
+        
+
+       
+     
+
+ </script>
+</body>
+</html>
