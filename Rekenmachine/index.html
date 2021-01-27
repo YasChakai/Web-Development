@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Mijn Rekenmachine</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="rekenmachine">
+            <div class="clock">
+                <span class="hour"></span>18:00<span class="minute"></span>
+            </div>
+            <div class="status">
+                <img src="status.png" height="14px" alt="Status">
+            </div>
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value">0</p>
+                </div>
+            </div>
+            <div id="toetsenbord">
+
+                <button class="functie clearall" id="clear">AC</button>
+                <button class="functie posneg" id="+/-">+/-</button>
+                <button class="functie modulo" id="%">%</button>
+                <button class="functie divide" id="/">/</button>
+                <button class="nummer" id="7">7</button>
+                <button class="nummer" id="8">8</button>
+                <button class="nummer" id="9">9</button>
+                <button class="functie multiply" id="*">&times;</button>
+                <button class="nummer" id="4">4</button>
+                <button class="nummer" id="5">5</button>
+                <button class="nummer" id="6">6</button>
+                <button class="functie minus" id="-">-</button>
+                <button class="nummer" id="1">1</button>
+                <button class="nummer" id="2">2</button>
+                <button class="nummer" id="3">3</button>
+                <button class="functie addup" id="+">+</button>
+                <button class="nummer" id="0"> 0</button>
+                <button class="functie period" id=".">.</button>
+                <button class="functie equals" id="=">=</button>
+
+              </div>
+            <div class="lijn"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
