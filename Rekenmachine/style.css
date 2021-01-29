@@ -42,7 +42,7 @@ body {
 }
 
 #result {
-    height: 200px;
+   
     background-color: rgb(0, 0, 0);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -52,24 +52,23 @@ body {
 
 }
 
-#history{
-    text-align: right;
-    height: 40px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: 15px;
-    color: #919191;
-    padding-bottom: 25px;
-
-}
 
 #output {
     text-align: right;
     height: 60px;
-    margin: 10px 20px;
-    font-size: 30px;
-
+    margin: 10px 20px ;
+    margin-top: 80px;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-color:rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 14ch;
+  
 }
+
 
 #toetsenbord {
     height: 400px;
@@ -167,10 +166,10 @@ button:nth-child(18) {
 
     background-color: rgb(255, 255, 255);
 
-    height: 4px;
+    height: 3.5px;
     width: 120px;
     margin-left: 105px;
-    margin-top: 16px;
+    margin-top: 15px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
