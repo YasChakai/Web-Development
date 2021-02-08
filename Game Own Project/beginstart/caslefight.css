@@ -1,0 +1,46 @@
+body {
+
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+
+    }
+
+    
+    
+    #spelsetup {
+     
+    
+        background-image: url("..//fotos/castle.gif");
+        background-repeat: no-repeat;
+         widows: 1000px;
+         height: 600px;
+         margin-left: 400px;
+         margin-top: 100px;
+         }
+    
+ 
+  
+
+   
+    .fighter{
+    
+   display:inline-block;
+  
+   margin-top: 230px;
+   
+   
+    }
+    
+    #enemy{
+
+
+    margin-left: 140px;
+    
+
+    }
+
+    

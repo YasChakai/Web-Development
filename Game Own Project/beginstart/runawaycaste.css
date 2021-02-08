@@ -1,0 +1,88 @@
+body {
+
+    background-color: black;
+    color:white;
+    font-size: 20 px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    position:absolute;
+    
+    align-self: center;
+}
+    
+a {
+
+color:white;
+font-weight: 700;
+text-decoration: none;
+
+}
+a:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+}
+
+
+
+
+a:hover{
+
+ color:rgb(255, 255, 255);
+ font-weight: 900;
+  }
+
+
+
+
+#spelsetup {
+ 
+
+    background-image: url("..//fotos/castlerunorfight.gif");
+    background-repeat: no-repeat;
+    width: 1000px;
+     height: 700px;
+     text-align: center;
+     margin-left: 400px;
+     margin-top:200px;
+     ;}
+
+p {
+
+
+background-color:rgba(94, 9, 9, 0.6);
+width: 550px;
+margin-left: 100px;
+margin-top:-14px;
+}
+
+
+
+
+.fighter {
+
+
+margin-right:490px;
+
+position: relative;
+margin-top:-110px;
+ 
+
+}
+
+.run {
+
+
+position: relative;
+padding-bottom: 220px;
+
+
+}
+
+.fight {
+position: absolute;
+margin-left: -400px;
+margin-top: 30px;
+
+
+
+}

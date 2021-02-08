@@ -1,0 +1,110 @@
+body {
+
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+
+button {
+
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 25px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+button:hover {
+
+    background-color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+
+#spelsetup {
+    display:flex;
+    flex-direction: row;
+    background-image: url("..//fotos/mountain.gif");
+    background-repeat: no-repeat;
+    widows: 1000px;
+    height: 600px;
+    margin-left: 400px;
+    margin-top: 100px;
+   
+}
+
+
+
+.fighter {
+
+
+
+     
+margin-top: 390px;
+
+ 
+
+}
+
+
+
+#enemy {
+    margin-left: 100px;
+    
+}
+
+.stats {
+
+   width: 169px;
+   margin-top: 80px;
+
+}
+
+
+
+#healthLabel{
+   
+    font-weight: bold;
+    font: 16pt Arial, Helvetica, sans-serif;
+    
+
+}
+
+.hpBorder {
+  width: 160px; 
+  height: 30px;
+  border: 3px solid;
+  border-color: black;
+
+}
+.hpBar{
+
+width: 160px;
+height: 30px;
+background-color: green;
+
+}
+
+
+.buttons{
+
+    margin-top: 460px;
+}
+
+span {
+
+
+    font: 12pt Arial, Helvetica, sans-serif;
+}

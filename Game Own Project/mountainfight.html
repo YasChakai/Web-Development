@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocro Knight</title>
+    <link rel="stylesheet" href="beginstart/mountainfight.css">
+</head>
+
+<body>
+    <div id="spelsetup">
+
+
+        <div id="stats" id="oppStats">
+            <span id="healthLabel">HEALTH</span>
+            <div class="hpBorder">
+                <div id="oppHP" class="hpBar"></div>
+                <span id="bottomRow"></span>
+            </div>
+        </div>
+
+
+
+        <img class="fighter" id="enemy" src="fotos/enemyopp.gif" height="160px">
+
+        <img class="fighter" id="fighter" src="fotos/voorkant.gif" height="150px">
+
+        <div id="stats" id="fightStats">
+            <span id="healthLabel">HEALTH</span>
+            <div class="hpBorder">
+                <div id="fightHP" class="hpBar"></div>
+            </div>
+            <div class="buttons">
+                <p id="remove">
+                    <button onclick="kick()" class="Kick">Kick</button>
+                    <button onclick="sword()" class="SwordAtt">Sword</button>
+                    <button onclick="special()" class="SpecialAtt">Special</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <span id="bottomRow"></span>
+
+
+    <script src="fight.js"></script>
+</body>
+
+</html>

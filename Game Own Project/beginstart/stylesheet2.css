@@ -1,0 +1,83 @@
+body {
+
+    background-color: black;
+    color:white;
+    font-size: 20 px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    align-self: center;
+    }
+    h1 {
+      
+        font-family: Papyrus;
+        font-size:71px;
+        position: relative;
+        color: black;
+        margin-top: 90px;
+        margin-left: -467px;
+        
+    
+    }
+    
+    .secondtext{
+    
+       font-size: 70px;
+       color: rgb(102, 29, 29);
+       margin-left: -470px;
+        margin-top: -155px;
+    
+    }
+    
+    
+    a {
+    
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    
+    
+    
+    }
+    
+    a:hover{
+    
+     color:rgb(255, 255, 255);
+     font-weight: 900;
+      }
+    
+    
+    
+    
+    #spelsetup {
+     
+    
+        background-image: url("..//backgroundimage.gif");
+        background-repeat: no-repeat;
+         widows: 1000px;
+         height: 600px;
+         text-align: center;
+         margin-left: 400px;
+         margin-top:200px;
+         ;}
+    
+    p {
+    
+    margin-top:10px;
+    background-color:rgba(94, 9, 9, 0.6);
+    width: 450px;
+    margin-left: 100px;
+    }
+    
+    
+    
+    
+    img {
+    
+     
+ position: relative;
+ margin-right:500px;
+ margin-top: 50px;
+    
+    }
+
+   
