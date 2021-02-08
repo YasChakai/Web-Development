@@ -19,7 +19,7 @@ function removeZero() {
 function negative()
 {  
     let value = document.getElementById("output").innerHTML;
-    // return -Math.abs(value);
+  
     document.getElementById("output").innerHTML = -Math.abs(value);
     if (value == -Math.abs(value))
     {
