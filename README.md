@@ -1,2 +1,2 @@
 # Web-Development
-HTML5 &amp; CSS Opdrachten
+HTML5 &amp; CSS Opdrachten & Javascript
