@@ -138,40 +138,62 @@
 // GOOD LUCK �
 
 
-let marksHeights = 1.69;
-let marksWeight = 78;
+// let marksHeights = 1.69;
+// let marksWeight = 78;
 
-marksWeight = marksHeights = 78 / (1.69 * 1.69);
+// let markBmi = marksWeight / (marksHeights * marksHeights);
 
-let markBmi = marksHeights;
-
-console.log (markBmi);
+// console.log (markBmi);
 
 
 
 
 
 
+// let johnHeights = 1.95;
+// let johnWeight = 92;
 
-let johnHeights = 1.88;
-let johnWeight = 95;
+// let johnBmi = johnWeight / (johnHeights * johnHeights);
 
-johnWeight = johnHeights = 95 / (1.88 * 1.88);
+// console.log (johnBmi);
 
-let johnBmi = johnHeights;
+// const markHigherBMI = markBmi > johnBmi;
 
-console.log (johnBmi);
-
-const markHigherBMI = markBmi > johnBmi;
-
-console.log (markHigherBMI);
+// console.log (markHigherBMI);
 
 
+// const firstName = 'Yassin';
+// const job = 'programmer';   
+// const birthYear = 1998;
+// const year = 2020;
+
+// const yassin = "I'm "  + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+
+// console.log (yassin);
+
+
+// const yassinNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}`;
+
+// console.log(yassinNew);
+
+// console.log(`Just a regular string...`);
+
+
+const age = 15;
+
+
+if(age >= 18) {
+
+    console.log('Yassin can start driving license ');
 
 
 
 
 
+} else {
+    const yearsLeft = 18 - age;
+    console.log(` You need to whait ${yearsLeft} years before you can drive `);
 
+}
 
 
