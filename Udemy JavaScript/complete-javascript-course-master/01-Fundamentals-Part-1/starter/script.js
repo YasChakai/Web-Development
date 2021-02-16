@@ -176,24 +176,74 @@
 
 // console.log(yassinNew);
 
-// console.log(`Just a regular string...`);
+// // console.log(`Just a regular string...`);
 
 
-const age = 15;
+// const age = 15;
 
 
-if(age >= 18) {
+// if(age >= 18) {
 
-    console.log('Yassin can start driving license ');
-
-
+//     console.log('Yassin can start driving license ');
 
 
+
+
+
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(` You need to whait ${yearsLeft} years before you can drive `);
+
+// }
+
+
+
+// const birthYear = 2000;
+// let century;
+// if(birthYear <= 2000){
+
+//  century= 20;
+
+
+
+// } else {
+//  century = 21;
+// }
+// console.log(century)
+
+
+
+
+
+// Coding Challenge #1
+// Mark and John are trying to compare their BMI (Body Mass Index), which is
+// calculated using the formula:
+// BMI = mass / height ** 2 = mass / (height * height) (mass in kg
+// and height in meter).
+// Your tasks:
+// 1. Store Mark's and John's mass and height in variables
+// 2. Calculate both their BMIs using the formula (you can even implement both
+// versions)
+// 3. Create a Boolean variable 'markHigherBMI' containing information about
+// whether Mark has a higher BMI than John.
+// Test data:
+// § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+// m tall.
+// § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+// m tall.
+// GOOD LUCK �
+
+
+
+const marksBMI = 28.3;
+const johnsBMI = 23.9;
+
+if (marksBMI > johnsBMI){
+
+    console.log(`Marks BMI is ${marksBMI} greater than John's ${johnsBMI}`);
 
 } else {
-    const yearsLeft = 18 - age;
-    console.log(` You need to whait ${yearsLeft} years before you can drive `);
-
-}
 
 
+
+console.log(`Johns MBI is ${johnsBMI} greater than marks ${marksBMI} bmi `);}
