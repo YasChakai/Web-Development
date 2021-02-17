@@ -219,31 +219,198 @@
 // Mark and John are trying to compare their BMI (Body Mass Index), which is
 // calculated using the formula:
 // BMI = mass / height ** 2 = mass / (height * height) (mass in kg
-// and height in meter).
-// Your tasks:
-// 1. Store Mark's and John's mass and height in variables
-// 2. Calculate both their BMIs using the formula (you can even implement both
-// versions)
-// 3. Create a Boolean variable 'markHigherBMI' containing information about
-// whether Mark has a higher BMI than John.
-// Test data:
-// § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
-// m tall.
-// § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
-// m tall.
-// GOOD LUCK �
+// // and height in meter).
+// // Your tasks:
+// // 1. Store Mark's and John's mass and height in variables
+// // 2. Calculate both their BMIs using the formula (you can even implement both
+// // versions)
+// // 3. Create a Boolean variable 'markHigherBMI' containing information about
+// // whether Mark has a higher BMI than John.
+// // Test data:
+// // § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+// // m tall.
+// // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+// // m tall.
+// // GOOD LUCK �
 
 
 
-const marksBMI = 28.3;
-const johnsBMI = 23.9;
+// // const marksBMI = 28.3;
+// // const johnsBMI = 23.9;
 
-if (marksBMI > johnsBMI){
+// // if (marksBMI > johnsBMI){
 
-    console.log(`Marks BMI is ${marksBMI} greater than John's ${johnsBMI}`);
+// //     console.log(`Marks BMI is ${marksBMI} greater than John's ${johnsBMI}`);
 
-} else {
+// // } else {
 
 
 
-console.log(`Johns MBI is ${johnsBMI} greater than marks ${marksBMI} bmi `);}
+// // console.log(`Johns MBI is ${johnsBMI} greater than marks ${marksBMI} bmi `);}
+
+
+// const inputYear = '1991';
+// console.log(Number(inputYear));
+// console.log (Number(inputYear) + 18);
+
+// let n = '1' + 1;
+
+// n = n - 1 ;
+
+// console.log (n);
+
+
+// 5 falsy value : 0, '' ,undefined , null , NaN
+
+
+// // console.log (Boolean(0));
+// // console.log (Boolean(undefined));
+// // console.log (Boolean('Jonas'));
+// // console.log (Boolean(''));
+// // console.log (Boolean({}));
+
+
+// // const money = 0;
+
+// // if (money){
+// // console.log ("Don't spend it all ;)");
+
+
+// // } else {
+
+// // console.log ("Get a Job !")
+
+// // }
+
+// // let height ;
+
+// // if (height) {
+
+// // console.log ('YAAY height is defined');
+
+
+
+// // } else {
+
+// // console.log ('Height is Undefined');
+
+// // }
+
+// const age = '18' ;
+
+// if (age === 18) console.log ('you just became an adult :d');
+
+
+
+
+// if (age == 18) console.log ('you just became an adult :d');
+
+
+// const favourite = Number( prompt ('WAT IS YOUR FAVOURITE NUMBER'));
+
+// console.log (favourite);
+// console.log (typeof favourite);
+
+// if (favourite === 23) {
+
+
+//     console.log ('cool 23 is a amazing number') 
+
+// } else if (favourite === 7 ) {
+
+// console.log ('7 is a cool number too')
+
+// } else {
+
+// console.log ('number is not 23 or 7')
+
+// }
+
+
+
+// // if (favourite !== 23) console.log ('why not 23')
+
+
+
+
+// const hasDriversLicense = true;
+
+// const hasGoodVision = true;
+
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive){
+//   console.log ('Sarah is driving')
+
+
+// // }else {
+
+// // console.log ('someone else should drive')
+
+// // }
+
+// // const isTired = true 
+
+
+
+// const dolphin = (96 + 108 + 89) / 3;
+// console.log(dolphin);
+
+// const koalas = (88 + 91 + 110) / 3;
+// console.log(koalas);
+
+
+
+
+// if (dolphin > koalas) {
+ 
+//     console.log('Dolphin the winner')
+
+// } else if (dolphin < koalas) {
+
+//   console.log ('Koalas are the winning team')
+
+// } else if (dolphin == koalas){
+
+
+//     console.log ('its a draw')
+// }
+
+
+
+// const dolphin = (96 + 108 + 89) / 3;
+// console.log(dolphin);
+
+// const koalas = (88 + 91 + 110) / 3;
+// console.log(koalas);
+
+
+// console.log(lose);
+
+// if (dolphin > koalas && dolphins >= 100) {
+ 
+//     console.log('Dolphin the winner')
+
+// } else if (dolphin < koalas  && koalas >= 100)  {
+
+//   console.log ('Koalas are the winning team')
+
+// } else if (dolphin == koalas){
+
+
+//     console.log ('its a draw')
+// }
+
+
+const day = 'monday';
+
+switch (day) {
+
+ case 'monday':
+     console.log ( 'plan course structure');
+     console.log ('go to coding meetup')
+
+     
+
+}
