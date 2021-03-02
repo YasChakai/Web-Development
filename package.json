@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.1",
+    "react-calendar": "^3.3.1"
   }
 }
