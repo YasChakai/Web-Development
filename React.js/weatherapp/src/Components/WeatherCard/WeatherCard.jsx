@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './WeatherCard.css'
 import { getWeatherData } from "../WeatherInfo/WeatherInfo";
-const WeatherCard = ({city}) => {
+const WeatherCard = ({city, click}) => {
     const [weatherdata, setWeatherData] = useState(null);
-    const [loading, setLoading] = useState(false);
+    
     const getData = async () => {
       try {
         const data = await getWeatherData(city);
@@ -17,25 +17,26 @@ const WeatherCard = ({city}) => {
       getData();
     }, []);
     return (
-        <div className="card">
-        <h2 className="title">Het Weer</h2>
+        <div className="kaart" onClick={click}>
+          
+        <h2 className="title" onClick={click}>Het Weer</h2>
         {weatherdata !== null ? (
-          <div className="main-container">
-            <h2 className="title">
-            </h2>
-            <h4>{weatherdata.name}</h4>
-            <h3>{weatherdata.weather[0].main}</h3>
-            <div className="temp">
-              <img src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}></img>
+          <div className="main-container" onClick={click}>
+            <h2 className="title" onClick={click}>  <h3>{weatherdata.name} </h3>
+            </h2><img className="logoi" src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`}></img>
+             <div className="temp"> 
               <h4>{weatherdata.main.temp}&deg;C</h4>
+           
+           
+            
             </div>
             <div className="location">
-              <h3>{weatherdata.name} </h3>
+             
             </div>
             <div className="temp-range">
               <h6>
-                min: {weatherdata.main.temp_min}&deg;C  Max:{" "}
-                {weatherdata.main.temp_max}&deg;C  Humidity:{" "}
+               <div> Min: {weatherdata.main.temp_min}&deg;C</div> <div> Max:{" "}
+                {weatherdata.main.temp_max}&deg;C</div>  Humidity:{" "}
                 {weatherdata.main.humidity}%
               </h6>
             </div>

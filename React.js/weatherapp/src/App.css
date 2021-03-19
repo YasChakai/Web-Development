@@ -1,8 +1,4 @@
-.App{
-    text-align: center;
-    display: flex;
-    flex-wrap: nowrap;
-  }
+
 
   h3 {
     color: rgb(255, 255, 255);
@@ -10,20 +6,22 @@
 
 
   }
-  .card{
-    justify-content:space-evenly;
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
+  .kaart{
+ 
+
+    margin:auto;
+    width: 400px;
+    height:600px;
+  
     
-    margin: auto;
-   
-    
-    background-image: url(https://media3.giphy.com/media/1uLQUtPLbJMQ0/giphy.gif?cid=ecf05e47f94vvc5uczxgg58b4y2riqm5vtsjju4ls3958oo8&rid=giphy.gif3);
+    background-image: url(http://31.media.tumblr.com/ea0a259753ce476ac52aba6e48cef283/tumblr_nf5prbLU1i1rk1miho1_400.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    /* box-shadow: -2px 1px 1px 5px rgb(0, 0, 0); */
-  
+    box-shadow: 1% 1px 1px 5px rgb(0, 0, 0);
+   
+  }
+  .kaart:hover {
+    box-shadow: 0 14px 8px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .title{
     color: rgb(255, 255, 255);
@@ -41,8 +39,5 @@
     font-size: 25px;
     font-weight: 400;
   }
-  h6 {
-
-    justify-content: ;
-
-  }
+ 
+  
