@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getWeatherData } from "../WeatherInfo/WeatherDetail_Info";
 import "./WeatherDetail.css";
-// FUNCTION WEATHERDETAIL-------------------------------------------------------------------------------------------------------
+
 const WeatherDetail = ({  lat, lon }) => {
   const [weatherdata, setWeatherData] = useState(null);
 
@@ -17,7 +17,9 @@ const WeatherDetail = ({  lat, lon }) => {
   useEffect(() => {
     getData();
   }, []);
-  // NEW SUB-FUNCTION FOR ACCORDION BELOW ///----------------------------------------------------------------------------------------
+
+
+
   const [active, setActive] = useState("off");
   const Accordion = ({ title, active, setActive }) => {
     let d = new Date(title.dt * 1000).toLocaleDateString();
@@ -33,8 +35,7 @@ const WeatherDetail = ({  lat, lon }) => {
         src={`http://openweathermap.org/img/wn/${title.weather[0].icon}@2x.png`}
       ></img>
     );
-    // console.log(d);
-    // console.log(weatherdata);
+    
     return (
       <div className="accordion">
         <div className="accordionHeading">
@@ -69,19 +70,14 @@ const WeatherDetail = ({  lat, lon }) => {
                   <td>{night}&deg;C</td>
                 </tr>
               </tbody>
-              {/* <tfoot>
-                <tr>
-                  <td>Sum</td>
-                  <td>$180</td>
-                </tr>
-              </tfoot> */}
+              
             </table>
           </div>
         </div>
       </div>
     );
   };
-  // ------------------------------------------------------------------------------------------------------------------------------
+ 
   return (
     <div className="weatherDetails">
       {weatherdata !== null ? (
